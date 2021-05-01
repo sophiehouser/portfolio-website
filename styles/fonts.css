@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Impact';
+    src: url('fonts/Impact.ttf') format("opentype");
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+@font-face {
+    font-family: 'Portico';
+    src: url('fonts/Portico.otf') format("opentype");
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
