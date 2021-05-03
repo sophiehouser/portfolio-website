@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    html, body {
+        background: black;
+    }
+    .center-div {
+        margin: 0 auto;
+        padding: 50vh 0;
+        text-align: center;
+    }
+    #container img {
+        width: 100%;
+        height: auto;
+    }
+
+    #display  {
+        color: white;
+        background: black;
+        overflow: hidden;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="display:flex; margin:0">
+<div style="background-color:green;max-height:100vh;overflow:auto;flex:1" id="container">
+    <div class="tampon_run_preamble" style="flex:1;height:100vh;background-color:red;"><div class="center-div"><img src="images/TRPreamble.png"></div></div>
+    <div class="tampon_run_mobile" style="flex:1;height:100vh;background-color:red;"><div class="center-div"><img src="images/TRmobile.jpg"></div></div>
+    <div id="sumo_orange" style="flex:1;height:100vh;background-color:purple;"><div class="center-div"><img src="images/falafelFaceLeft.png"></div></div>
+    <div id="ice_cream" style="flex:1;height:100vh;background-color:blue;"><div class="center-div"><img src="images/falafelFaceLeft.png"></div></div>
+    <div id="gifs" style="flex:1;height:100vh;background-color:yellow;"><div class="center-div"><img src="images/falafelFaceLeft.png"></div></div>
+</div>
+<div style="width:30vw;background-color:blue;" >
+    <div id="display" class="center-div">
+
+    </div>
+</div>
+
+<script>let nameDisplayDiv = document.getElementById('display')
+let containerDiv = document.getElementById('container')
+
+function refresh() {
+    let scrollTop = containerDiv.scrollTop + containerDiv.clientHeight / 2
+    let height = 0
+    for (let child of containerDiv.children) {
+        let top = height
+        let bottom = height += child.clientHeight
+        if (top < scrollTop && bottom > scrollTop) {
+            switch (child.className) {
+                case "tampon_run_preamble":
+                    nameDisplayDiv.innerHTML = "Here is Tampon Run.";
+                    return;
+                case "tampon_run_mobile":
+                    nameDisplayDiv.innerHTML = "Here is mobile tampon run.";
+                    return;
+                case "sumo_orange":
+                    nameDisplayDiv.innerHTML = "Here is Sumo girl."
+                    return;
+                case "ice_cream":
+                    nameDisplayDiv.innerHTML = "Here is Ice Cream."
+                    return;
+                case "gifs":
+                    nameDisplayDiv.innerHTML = "Here is GIFS."
+                    return;
+            }
+
+            break
+        }
+    }
+}
+
+containerDiv.onscroll = refresh
+
+refresh()</script>
+</body>
+</html>
