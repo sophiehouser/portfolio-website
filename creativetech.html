@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            left: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+        }
+        #content{
+            left: -1vw;
+            width: 100vw;
+        }
+        .PostHeader {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .title {
+        }
+
+        .role {
+        }
+
+        .title h1{
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-size:1.5rem;
+        }
+
+        .role h2{
+            color: white;
+            font-family: "Georgia",serif;
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .details {
+            padding-top: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 75%;
+        }
+
+        .details video {
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+
+        .details_info {
+            width: 50%;
+        }
+        li {
+            float: left;
+            list-style-type: none;
+            padding: .5vw;
+        }
+
+        .siema {
+            margin: 1rem 0;
+            max-width:100%;
+        }
+        .siema img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="content" style="">
+    <section id="dice" class="post">
+        <header style="color: #fff; background-color: black">
+            <div class="PostHeader">
+                <div class="title"><h1 >TAMPON RUN / GIRL CODE</h1></div>
+                <div class="role"><h2>
+                    Code, Design, Public Speaking &amp; Author
+                </h2>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="details">
+                <div class="browser maxied">
+                        <video playsinline autoplay muted loop id="dice_video" class="browser_img" title="DICE Berlin" preload="auto" data-setup="{}">
+                            <source src="images/tr_game_play_shorter.mp4" type="video/mp4"> </video>
+
+                </div>
+                <div class="details_info">
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+
+                </div>
+
+                    <ul class="tags">
+                        <li>Wordpress</li>
+                        <li>Three.js</li>
+                        <li>WebGL</li>
+                    </ul>
+
+                <p><a href="http://dice.berlin/" class="button" rel="external" target="_blank">View website</a></p>
+            </div>
+        </article>
+    </section>
+    <section id="two" class="post">
+        <header style="color: #fff; background-color: black">
+            <div class="PostHeader">
+                <div class="title"><h1 >TAMPON RUN / GIRL CODE</h1></div>
+                <div class="role"><h2>
+                    Code, Design, Public Speaking &amp; Author
+                </h2>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="details">
+                <div class="browser maxied">
+                    <video playsinline autoplay muted loop id="two_video" class="browser_img" title="DICE Berlin" preload="auto" data-setup="{}">
+                        <source src="images/tr_game_play_shorter.mp4" type="video/mp4"> </video>
+
+                </div>
+
+                <div class="siema">
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+                    <div><img src="https://pawelgrzybek.github.io/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+                </div>
+
+                <button class="prev"><</button>
+                <button class="next">></button>
+                <script src="scripts/lib/siema.min.js"></script>
+                <script>
+                    const mySiema = new Siema({
+                        perPage: {
+                            768: 2,
+                            1024: 3,
+                        },
+                    });
+                    const prev = document.querySelector('.prev');
+                    const next = document.querySelector('.next');
+
+                    prev.addEventListener('click', () => mySiema.prev());
+                    next.addEventListener('click', () => mySiema.next());
+                </script>
+
+                <div class="details_info">
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+
+                </div>
+
+                <ul class="tags">
+                    <li>Wordpress</li>
+                    <li>Three.js</li>
+                    <li>WebGL</li>
+                </ul>
+
+                <p><a href="http://dice.berlin/" class="button" rel="external" target="_blank">View website</a></p>
+            </div>
+        </article>
+    </section>
+</div>
+</body>
+
+</html>
