@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+    <style>
+        html {
+            background: url(images/birds.gif) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .center-div {
+            margin: 0 auto;
+            padding: 50% 0;
+            text-align: center;
+        }
+
+        #nav {
+            width: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding: 20px;
+            overflow: auto;
+            vertical-align: center;
+        }
+
+        #footer {
+            position:fixed;
+            right:10px;
+            bottom:10px;
+            margin:0;
+            width:10%;
+            height:10%;
+            background:url(img/BAIRD.png) no-repeat bottom right;
+            background-size:100%;
+        }
+        a {
+            color:transparent;
+            font-size: 3.5em;
+            font-style: italic;
+            font-family: "Impact";
+            display: block;
+            text-decoration: none;
+            margin-bottom: 2vw;
+            target-new: tab;
+        }
+
+        a:hover {
+            text-shadow: 0px 0px 0px #471975;
+        }
+
+        .outline {
+            color: #471975;
+            text-shadow:
+                    -1px -1px 0 #471975,
+                    1px -1px 0 #471975,
+                    -1px 1px 0 #471975,
+                    1px 1px 0 #471975
+        }
+
+        @supports((text-stroke: 2px #FF10F0) or (-webkit-text-stroke: 2px #FF10F0)) {
+            .outline {
+                color: transparent;
+                -webkit-text-stroke: 2px #FF10F0;
+                text-stroke: 2px #FF10F0;
+                text-shadow: none;
+            }
+
+            .note {
+                position:relative;
+            }
+
+            .note p {
+                position: fixed;
+                left:30px;
+                top:10%;
+                margin:0;
+                width:10%;
+                height:10%;
+                font-family: "Portico";
+                color:#3cb74c;
+                letter-spacing: .01em;
+                font-size: 1em;
+            }
+
+            .note h1 {
+                position: fixed;
+                left:30px;
+                top:20%;
+                margin:0;
+                width:10%;
+                height:10%;
+                font-family: "Portico";
+                color: #a585fc;
+                letter-spacing: .01em;
+                font-size: 1em;
+            }
+
+            .note h2 {
+                position: fixed;
+                left:30px;
+                top:35%;
+                margin:0;
+                width:10%;
+                height:10%;
+                font-family: "Portico";
+                color: #a585fc;
+                letter-spacing: .01em;
+                font-size: 1em;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="outline center-div" id="nav">
+    <div>
+        <a class="outline" href="about.html">about</a>
+        <a class="outline" href="merchTemp.html">portfolio</a>
+    </div>
+</div>
+<div class="note"> <p> Sophie Houser <br> <h1>coder <br> animator <br> illustrator </h1> <h2>living in berlin <br> lover of x </h2></p> </div>
+<div id="footer">
+
+</body>
+</html>
