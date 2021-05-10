@@ -48,24 +48,33 @@ class FaceSprite{
             this.xSpeed = -this.xSpeed;
             this.sprite.position.x = windowWidth - this.sprite.width;
             this.sprite.mirrorX(-1);
-            //this.tint();
+            this.tintSprite();
             //this.flip();
         } else if (this.sprite.position.x <= 0) {
             this.xSpeed = -this.xSpeed;
             this.sprite.position.x = 0;
             this.sprite.mirrorX(1);
-            //this.tint();
+            this.tintSprite();
             //this.flip();
         }
 
         if (this.sprite.position.y + this.sprite.height/2 >= windowHeight) {
             this.ySpeed = -this.ySpeed;
             this.sprite.position.y = windowHeight - this.sprite.height;
-            //this.tint();
+            this.tintSprite();
         } else if (this.sprite.position.y <= 0) {
             this.ySpeed = -this.ySpeed;
             this.sprite.position.y = 0;
+            this.tintSprite();
         }
+    }
+
+    tintSprite() {
+        r = random(100, 256);
+        g = random(100, 256);
+        b = random(100, 256);
+
+        tint(r, g, b);
     }
 }
 
@@ -94,8 +103,18 @@ function refreshSprites(faceCount, spriteList) {
     }
 }
 
+function tintSprites() {
+    r = random(100, 256);
+    g = random(100, 256);
+    b = random(100, 256);
+
+    tint(r, g, b);
+}
+
 function draw() {
     background(0);
+
+    tintSprites();
 
     drawSprites();
 

@@ -84,11 +84,16 @@ class Face {
 
 function preload() {}
 
-function setup(faceCount = STARTING_FACE_COUNT) {
+function setup() {
     createCanvas(windowWidth, windowHeight);
-    console.log("setup");
-    console.log(faceCount);
 
+    refreshSprites(STARTING_FACE_COUNT, faces)
+
+    createPortfolioText();
+}
+
+
+function refreshSprites(faceCount, spriteList) {
     var  i;
     for (i=0; i < faceCount; i++) {
         xPos = random(width);
@@ -96,7 +101,7 @@ function setup(faceCount = STARTING_FACE_COUNT) {
         xspeed = random(6);
         yspeed = random(6);
 
-        faces[i] = new Face('images/falafelFaceRight.png', xPos, yPos, xspeed, yspeed);
+        spriteList[i] = new Face('images/falafelFaceRight.png', xPos, yPos, xspeed, yspeed);
     }
 }
 
@@ -113,10 +118,40 @@ function draw() {
 
 function setFaceCount() {
     faceCount = document.getElementById('faceCount').value;
-    console.log('count in box: ');
 
-    if (faceCount == null) {
-        console.log('it null');
-    }
-    setup(faceCount);
+    let faceCountInt = parseInt(faceCount)
+
+    refreshSprites(faceCountInt, faces);
+}
+
+function centerPortfolioText() {
+    linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);
+}
+
+function createPortfolioText() {
+    linkContentVar = createDiv().id("linkContent")
+    linkContentVar.style("margin-left", -linkContentVar.offsetWidth + "px");
+
+    createA("", ' im a software engineer, animator and artist. i like to explore xxx and xxxx. im currently living in berlin. ').parent(linkContentVar);
+
+    linkContentVar.style("max-width", window.innerWidth - window.innerWidth/3 + "px");
+    centerPortfolioText();
+
+    //linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);
+}
+
+function centerPortfolioText() {
+    linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);
+}
+
+function createPortfolioText() {
+    linkContentVar = createDiv().id("linkContent")
+    linkContentVar.style("margin-left", -linkContentVar.offsetWidth + "px");
+
+    createA("", ' im sophie. im 23. i like to do this and do that. i even like to do THIS. and sometimes when im feeling frisky i do this other things. crazy. i know. ').parent(linkContentVar);
+
+    linkContentVar.style("max-width", window.innerWidth - window.innerWidth/3 + "px");
+    centerPortfolioText();
+
+    //linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);
 }

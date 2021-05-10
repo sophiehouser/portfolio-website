@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sophie Houser - Creative Tech</title>
+    <link rel='stylesheet' href='styles/nav.css'>
+    <link rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -15,7 +17,7 @@
         }
 
         section {
-            padding-bottom: 20vh;
+            padding-bottom: 10%;
         }
 
         #content {
@@ -54,7 +56,7 @@
         }
 
         .details {
-            padding-top: 15vh;
+            padding-top: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -75,7 +77,7 @@
         }
 
         .asset {
-            padding-bottom:4vh;
+            padding-bottom: 4vh;
         }
 
         .details_info {
@@ -107,20 +109,55 @@
             color: white;
         }
 
-        li {
-            float: left;
-            list-style-type: none;
-            padding-right: 3vw;
+        .tags {
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+
+        .tags li {
+            display: inline-block;
+            *display: inline; /*IE7*/
+            *zoom: 1; /*IE7*/
+            margin-right: 10px;
             font-family: "Orator", monospace;
             font-size: .75em;
             letter-spacing: .3em;
-            padding-bottom: 6vh;
             padding-top: 2vh;
+            color: black;
         }
+
+        /*.tags {*/
+        /*    text-align: center;*/
+        /*    padding-bottom: 2vw;*/
+        /*}*/
+        /*.tags li {*/
+        /*    float: left;*/
+        /*    list-style-type: none;*/
+        /*    padding-right: 3vw;*/
+        /*    font-family: "Orator", monospace;*/
+        /*    font-size: .75em;*/
+        /*    letter-spacing: .3em;*/
+        /*    padding-top: 2vh;*/
+        /*}*/
     </style>
 </head>
 
 <body>
+<div class="masthead clearfix">
+    <div class="container inner">
+        <nav>
+            <ul class="nav masthead-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="active"><a href="creativetech.html">CREATIVE TECHNOLOGY</a></li>
+                <li><a href="animation.html">ANIMATION</a></li>
+                <li><a href="physical.html">PHYSICAL WORKS</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 <div id="content" style="">
     <section id="tampon_run" class="post">
         <header style="color: #fff; background-color: black">
@@ -130,19 +167,22 @@
                 <div class="role">
                     <h2>
                         Code, Design, Public Speaking &amp; Author
-                    </h2> </div>
+                    </h2></div>
             </div>
         </header>
         <article>
             <div class="details">
                 <div class="asset">
-                    <video playsinline autoplay muted loop id="two_video" class="browser_img" title="Tampon Run Gameplay" preload="auto" data-setup="{}">
-                        <source src="images/creativetech/tamponRunGameplay.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop id="two_video" class="browser_img"
+                           title="Tampon Run Gameplay" preload="auto" data-setup="{}">
+                        <source src="images/creativetech/tamponRunGameplay.mp4" type="video/mp4">
+                    </video>
                 </div>
-                <div class="asset"> <img src="images/creativetech/tamponRunPress.jpg"> </div>
-                <div class="asset"> <img src="images/creativetech/girlCode.jpg"> </div>
+                <div class="asset"><img src="images/creativetech/tamponRunPress.jpg"></div>
+                <div class="asset"><img src="images/creativetech/girlCode.jpg"></div>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this
+                        project which was really cool. I did this project which was really cool. </p>
                 </div>
                 <ul class="tags">
                     <li>PROCESSING</li>
@@ -154,7 +194,8 @@
                     <li>PUBLIC SPEAKING</li>
                 </ul>
                 <div class="website_button">
-                    <p><a href="https://apps.apple.com/us/app/tampon-run/id948757853" rel="external" target="_blank">VIEW iOS GAME</a></p>
+                    <p><a href="https://apps.apple.com/us/app/tampon-run/id948757853" rel="external" target="_blank">VIEW
+                        iOS GAME</a></p>
                 </div>
                 <div class="website_button">
                     <p><a href="http://tamponrun.com/" rel="external" target="_blank">VIEW WEB GAME</a></p>
@@ -170,24 +211,40 @@
                 <div class="role">
                     <h2>
                         Concept &amp; Creation
-                    </h2> </div>
+                    </h2></div>
             </div>
         </header>
         <article>
             <div class="details">
                 <div class="asset">
-                    <video playsinline autoplay muted loop class="browser_img" title="Face Filters" preload="auto" data-setup="{}">
-                        <source src="images/creativetech/faceFilter.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop class="browser_img" title="Face Filters" preload="auto"
+                           data-setup="{}">
+                        <source src="images/creativetech/faceFilterIMonster.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="asset">
+                    <video playsinline autoplay muted loop class="browser_img" title="Face Filters" preload="auto"
+                           data-setup="{}">
+                        <source src="images/creativetech/faceFilterVomit.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="asset">
+                    <video playsinline autoplay muted loop class="browser_img" title="Face Filters" preload="auto"
+                           data-setup="{}">
+                        <source src="images/creativetech/faceFilterGrantCult.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this
+                        project which was really cool. I did this project which was really cool. </p>
                 </div>
                 <ul class="tags">
                     <li>Spark AR</li>
                     <li>Photoshop</li>
                 </ul>
                 <div class="website_button">
-                    <p><a href="#" rel="external" target="_blank">TRY IT ON INSTAGRAM</a></p>
+                    <p><a href="https://www.instagram.com/ar/444449326705104/" rel="external" target="_blank">TRY IT ON
+                        INSTAGRAM</a></p>
                 </div>
             </div>
         </article>
@@ -200,17 +257,20 @@
                 <div class="role">
                     <h2>
                         Creative Coding
-                    </h2> </div>
+                    </h2></div>
             </div>
         </header>
         <article>
             <div class="details">
                 <div class="asset">
-                    <video playsinline autoplay muted loop class="browser_img" title="Tank" preload="auto" data-setup="{}">
-                        <source src="images/creativetech/tank.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop class="browser_img" title="Tank" preload="auto"
+                           data-setup="{}">
+                        <source src="images/creativetech/tank.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this
+                        project which was really cool. I did this project which was really cool. </p>
                 </div>
                 <ul class="tags">
                     <li>PROCESSING</li>
@@ -231,18 +291,21 @@
                 <div class="role">
                     <h2>
                         Graphic Design, UI Design, Web Development, Brand Identity
-                    </h2> </div>
+                    </h2></div>
             </div>
         </header>
         <article>
             <div class="details">
-                <div class="asset"> <img src="images/creativetech/meinePeanutHeroShots.jpg"> </div>
+                <div class="asset"><img src="images/creativetech/meinePeanutHeroShots.jpg"></div>
                 <div class="asset">
-                    <video playsinline autoplay muted loop class="browser_img" title="Meine Peanut" preload="auto" data-setup="{}">
-                        <source src="images/creativetech/meinePeanutWebsite.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop class="browser_img" title="Meine Peanut" preload="auto"
+                           data-setup="{}">
+                        <source src="images/creativetech/meinePeanutWebsite.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this
+                        project which was really cool. I did this project which was really cool. </p>
                 </div>
                 <ul class="tags">
                     <li>Javascript</li>

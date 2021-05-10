@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sophie Houser - Animation</title>
+    <link rel='stylesheet' href='styles/nav.css'>
+    <link rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -15,7 +17,7 @@
         }
 
         section {
-            padding-bottom: 20vh;
+            padding-bottom: 10%;
         }
 
         #content {
@@ -54,7 +56,7 @@
         }
 
         .details {
-            padding-top: 15vh;
+            padding-top: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -76,11 +78,11 @@
 
         .details iframe {
             height: 500px; /* "lmao'... i dont know why this works but height needs to be set. */
-            width: 100%; /* new width (100 * (1/0.8) )*/
+            width: 100%;
         }
 
         .asset {
-            padding-bottom:4vh;
+            padding-bottom: 4vh;
         }
 
         .details_info {
@@ -112,20 +114,41 @@
             color: white;
         }
 
-        li {
-            float: left;
-            list-style-type: none;
-            padding-right: 3vw;
+        .tags {
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+
+        .tags li {
+            display: inline-block;
+            *display: inline; /*IE7*/
+            *zoom: 1; /*IE7*/
+            margin-right: 10px;
             font-family: "Orator", monospace;
             font-size: .75em;
             letter-spacing: .3em;
-            padding-bottom: 6vh;
             padding-top: 2vh;
+            color: black;
         }
     </style>
 </head>
 
 <body>
+<div class="masthead clearfix">
+    <div class="container inner">
+        <nav>
+            <ul class="nav masthead-nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="creativetech.html">CREATIVE TECHNOLOGY</a></li>
+                <li class="active"><a href="animation.html">ANIMATION</a></li>
+                <li><a href="physical.html">PHYSICAL WORKS</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 <div id="content" style="">
     <section id="gifs" class="post">
         <header style="color: #fff; background-color: black">
@@ -134,41 +157,52 @@
                     <h1>GIFS</h1></div>
                 <div class="role">
                     <h2>
-                        Photoshop animation, painting &amp; drawing
-                    </h2> </div>
+                        Photoshop, Painting &amp; Drawing
+                    </h2></div>
             </div>
         </header>
         <article>
             <div class="details">
                 <div class="asset">
-                    <video playsinline autoplay muted loop id="ski_girls" class="browser_img" title="Ski  Girls" preload="auto" data-setup="{}">
-                        <source src="images/animation/skiGirls.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop id="ski_girls" class="browser_img" title="Ski  Girls"
+                           preload="auto" data-setup="{}">
+                        <source src="images/animation/skiGirls.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="asset">
-                    <video playsinline autoplay muted loop id="4am" class="browser_img" title="Ski  Girls" preload="auto" data-setup="{}">
-                        <source src="images/animation/4am.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop id="4am" class="browser_img" title="Ski  Girls"
+                           preload="auto" data-setup="{}">
+                        <source src="images/animation/4am.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="asset">
-                    <video playsinline autoplay muted loop id="whipped" class="browser_img" title="Defective Sumo" preload="auto" data-setup="{}">
-                        <source src="images/animation/whippedCream.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop id="whipped" class="browser_img" title="Defective Sumo"
+                           preload="auto" data-setup="{}">
+                        <source src="images/animation/whippedCream.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="asset">
-                    <video playsinline autoplay muted loop id="disaster_knife" class="browser_img" title="Disaster Knife" preload="auto" data-setup="{}">
-                        <source src="images/animation/disasterKnife.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop id="disaster_knife" class="browser_img"
+                           title="Disaster Knife" preload="auto" data-setup="{}">
+                        <source src="images/animation/disasterKnife.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="asset">
-                    <video playsinline autoplay muted loop id="sumo" class="browser_img" title="Defective Sumo" preload="auto" data-setup="{}">
-                        <source src="images/animation/defectiveSumo.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop id="sumo" class="browser_img" title="Defective Sumo"
+                           preload="auto" data-setup="{}">
+                        <source src="images/animation/defectiveSumo.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this
+                        project which was really cool. I did this project which was really cool. </p>
                 </div>
                 <ul class="tags">
-                    <li>PROCESSING</li>
-                    <li>C++</li>
-                    <li>XCODE</li>
-                    <li>PHOTOSHOP</li>
-                    <li>S3</li>
+                    <li>Photoshop</li>
+                    <li>iMovie</li>
+                    <li>Painting</li>
+                    <li>Drawing</li>
+                    <li>Collage</li>
                 </ul>
                 <div class="website_button">
                     <p><a href="https://vimeo.com/showcase/5405334" rel="external" target="_blank">SEE MORE</a></p>
@@ -184,14 +218,16 @@
                 <div class="role">
                     <h2>
                         Night time visuals for the main stage and square of The Palace Residency
-                    </h2> </div>
+                    </h2></div>
             </div>
         </header>
         <article>
             <div class="details">
-                    <iframe class="asset" id="palace" src="https://player.vimeo.com/video/464498474" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <iframe class="asset" id="palace" src="https://player.vimeo.com/video/464498474" frameborder="0"
+                        allow="autoplay; fullscreen" allowfullscreen></iframe>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this
+                        project which was really cool. I did this project which was really cool. </p>
                 </div>
                 <ul class="tags">
                     <li>Projection</li>
@@ -208,16 +244,23 @@
                 <div class="role">
                     <h2>
                         From her genesis to her inner mind, who IS she?
-                    </h2> </div>
+                    </h2></div>
             </div>
         </header>
         <article>
             <div class="details">
-                <iframe class= "asset" src="https://player.vimeo.com/video/546915854?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                <iframe class= "asset" src="https://player.vimeo.com/video/419692770?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    <iframe class= "asset" src="https://player.vimeo.com/video/419705646?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <iframe class="asset"
+                        src="https://player.vimeo.com/video/546915854?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1"
+                        frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <iframe class="asset"
+                        src="https://player.vimeo.com/video/419692770?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1"
+                        frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <iframe class="asset"
+                        src="https://player.vimeo.com/video/419705646?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1"
+                        frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> I did this project which was really cool. I did this project which was really cool. I did this
+                        project which was really cool. I did this project which was really cool. </p>
                 </div>
                 <ul class="tags">
                     <li>Painting</li>
