@@ -12,7 +12,7 @@ const STARTING_FACE_COUNT = 2;
 
 let r, g, b;
 
-class FaceSprite{
+class FaceSprite {
     constructor(xPos, yPos, xSpeed, ySpeed) {
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
@@ -58,7 +58,7 @@ class FaceSprite{
             //this.flip();
         }
 
-        if (this.sprite.position.y + this.sprite.height/2 >= windowHeight) {
+        if (this.sprite.position.y + this.sprite.height / 2 >= windowHeight) {
             this.ySpeed = -this.ySpeed;
             this.sprite.position.y = windowHeight - this.sprite.height;
             this.tintSprite();
@@ -78,7 +78,8 @@ class FaceSprite{
     }
 }
 
-function preload() {}
+function preload() {
+}
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -93,7 +94,7 @@ function refreshSprites(faceCount, spriteList) {
 
     this.clearSprites(spriteList);
 
-    for (let i=0; i < faceCount+1; i++) {
+    for (let i = 0; i < faceCount + 1; i++) {
         xPos = random(windowWidth);
         yPos = random(windowHeight);
         xspeed = random(6);
@@ -118,7 +119,7 @@ function draw() {
 
     drawSprites();
 
-    for (let i=0; i < faces.length; i++) {
+    for (let i = 0; i < faces.length; i++) {
         faces[i].move();
 
         // TODO: comment this back in if you want them to repell
@@ -146,13 +147,13 @@ function setFaceCount() {
 }
 
 function clearSprites(spriteArray) {
-    for (let i=0; i < spriteArray.length; i++) {
+    for (let i = 0; i < spriteArray.length; i++) {
         spriteArray[i].sprite.remove();
     }
 }
 
 function centerPortfolioText() {
-    linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);
+    linkContentVar.position(window.innerWidth / 2 - linkContentVar.elt.clientWidth / 2, window.innerHeight / 2 - linkContentVar.elt.clientHeight / 2);
 }
 
 function createPortfolioText() {
@@ -161,7 +162,7 @@ function createPortfolioText() {
 
     createA("", ' im a software engineer, animator and artist. i like to explore xxx and xxxx. im currently living in berlin. ').parent(linkContentVar);
 
-    linkContentVar.style("max-width", window.innerWidth - window.innerWidth/3 + "px");
+    linkContentVar.style("max-width", window.innerWidth - window.innerWidth / 3 + "px");
     centerPortfolioText();
 
     //linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);

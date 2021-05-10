@@ -82,15 +82,16 @@ class Face {
 
 }
 
-function preload() {}
+function preload() {
+}
 
 function setup(faceCount = STARTING_FACE_COUNT) {
     createCanvas(windowWidth, windowHeight);
     console.log("setup");
     console.log(faceCount);
 
-    var  i;
-    for (i=0; i < faceCount; i++) {
+    var i;
+    for (i = 0; i < faceCount; i++) {
         xPos = random(width);
         yPos = random(height);
         xspeed = random(6);
@@ -106,7 +107,7 @@ function draw() {
     console.log("draw faces: " + faceCount);
     animateCount = random(faceCount);
 
-    for (i=0; i < animateCount; i++) {
+    for (i = 0; i < animateCount; i++) {
         faces[i].move();
     }
 }

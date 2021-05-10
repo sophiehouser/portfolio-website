@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Ahhhhhhhh My Face Is Bouncing</title>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"></script>
-    
+
     <script src="scripts/tankWithTint.js"></script>
     <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-      }
-      canvas {
-        display: block;
-      }
-      #countForm {
-        z-index: 1;
-        top: 0%;
-        left: 0%;
-        position: absolute;
-        font-family: "Comic Sans MS";
-        color: white;
-        display: grid;
-    grid-template-columns: .5fr .5fr;
-    grid-gap: 20px;
-      }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #countForm {
+            z-index: 1;
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            font-family: "Comic Sans MS";
+            color: white;
+            display: grid;
+            grid-template-columns: .5fr .5fr;
+            grid-gap: 20px;
+        }
     </style>
-  </head>
-  <body>
-    <div id="countForm">
-      <form onsubmit="setFaceCount()">
+</head>
+<body>
+<div id="countForm">
+    <form onsubmit="setFaceCount()">
         <label for="faceCount">Number of faces:</label>
         <input type="faceCount" id="faceCount" name="faceCount"><br><br>
-      </form>
-      <button onclick="setFaceCount()">Go</button>
-  </div>
-  </body>
+    </form>
+    <button onclick="setFaceCount()">Go</button>
+</div>
+</body>
 </html>
