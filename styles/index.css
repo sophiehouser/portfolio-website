@@ -137,6 +137,11 @@ body {
     font-weight: bold;
 }
 
+.cover-heading img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /*
  * Affix and center
  */

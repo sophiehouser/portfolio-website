@@ -1,74 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Sophie Houser - About</title>
+    <meta charset="UTF-8">
+    <title>Sophie Houser - Physical Works</title>
     <link rel='stylesheet' href='styles/nav.css'>
+    <link rel='stylesheet' href='styles/about.css'>
     <link rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
-    <script src="scripts/lib/p5/p5.play.js" type="text/javascript"></script>
-
-    <script src="scripts/aboutTank.js"></script>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
 
-        body {
-            padding: 0;
-            margin: 0;
-            overflow: hidden;
-            background-color: black;
-        }
-
-        canvas {
-            display: block;
-        }
-
-        #countForm {
-            z-index: 1;
-            bottom: 1%;
-            left: 1%;
-            position: absolute;
-            font-family: "Orator";
-            color: white;
-            display: grid;
-            grid-template-columns: .5fr .5fr;
-            grid-gap: 20px;
-        }
-
-        #content {
-            text-align: center;
-            display: block;
-        }
-
-        #linkContent {
-            color: white;
-            display: block;
-            top: 50%;
-            left: 50%;
-            text-align: center;
-            z-index: 1;
-            /*column-count: 2;*/
-            /*column-gap: 10%;*/
-        }
-
-        a {
-            color: whitesmoke;
-            z-index: 1;
-            font-family: "Mate", monospace;
-            text-decoration: none;
-            font-size: 150%;
-            text-shadow: -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
-        }
     </style>
 </head>
+
 <body>
 <div class="masthead clearfix">
     <div class="container inner">
@@ -83,12 +26,60 @@
         </nav>
     </div>
 </div>
-<div id="countForm">
-    <form onsubmit="setFaceCount()">
-        <label for="faceCount">Number of faces:</label>
-        <input type="faceCount" id="faceCount" name="faceCount"><br><br>
-    </form>
-    <button onclick="setFaceCount()">Go</button>
+
+<div class="about-content">
+    <div class="flex-container">
+        <aside class="sidebar">
+            <div class="asset">
+                <video controls playsinline autoplay muted loop id="two_video" class="browser_img"
+                       title="Nerd Girl" preload="auto" data-setup="{}">
+                    <source src="images/about/nerdgirl.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="asset_caption">
+                <p>an ode to <a href="https://www.youtube.com/watch?v=knlJBy1eHyw" target="_blank"
+                                rel="noopener noreferrer">"girl with braces"</a>, better with sound on imo
+                </p>
+            </div>
+        </aside>
+        <section class="main-content">
+
+            <h2>Sophie Houser</h2>
+            <p class="mt-4 font-weight-light">
+                I love new strange situations, whether I find them through the projects I make, technologies I explore
+                or places I go. I think when I, and others, are pushed out of our comfort zones safely, we’re able to
+                try new ways of being, express novel ideas and have an openness to learn from others in ways we don’t in
+                our day to day lives. I’m especially interested in using playfulness and humor as tools to create these
+                experiences.
+                <br>
+                <br>
+                When I was 17, I co-created a simple video game that featured a girl throwing tampons at oncoming
+                enemies with a preamble about the stigma around menstruation. The game went viral overnight, generating
+                thought and conversation globally around the menstrual taboo. It was a lesson not just in the power of
+                play and humor to get people thinking and talking about something uncomfortable, but also the huge
+                impact a small project can have, especially when the medium is code.
+                <br>
+                <br>
+                After getting my B.A. at Brown University, where I studied Computer Science and Visual Arts, I moved to
+                Berlin where I’ve worked for the past year and a half as a software engineer at Delivery Hero. I’ve
+                learned there how to build backend services at a massive scale, and I’m now looking to use these skills
+                in a more creative way, as I’d like to get back to my roots in animation, painting, creative coding and
+                more.
+            </p>
+            <ul class="tags">
+                <li><img src="favicon-32x32.png"/></li>
+                <li>based in berlin</li>
+                <li><img src="favicon-32x32.png"/></li>
+                <li>97' baby</li>
+                <li><img src="favicon-32x32.png"/></li>
+                <li>brown u 19'</li>
+                <li><img src="favicon-32x32.png"/></li>
+                <li><a href="images/about/SophieHouserCV.pdf" target="_blank">my cv</a></li>
+                <li><img src="favicon-32x32.png"/></li>
+            </ul>
+        </section>
+    </div>
 </div>
 </body>
+
 </html>
