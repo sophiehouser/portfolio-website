@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sophie Houser - Physical Works</title>
+    <link rel='stylesheet' href='styles/nav.css'>
+    <link rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -15,7 +17,7 @@
         }
 
         section {
-            padding-bottom: 20vh;
+            padding-bottom: 10%;
         }
 
         #content {
@@ -54,7 +56,7 @@
         }
 
         .details {
-            padding-top: 15vh;
+            padding-top: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -75,7 +77,7 @@
         }
 
         .asset {
-            padding-bottom:4vh;
+            padding-bottom: 4vh;
         }
 
         .details_info {
@@ -85,6 +87,7 @@
         .details_info p {
             font-family: "Mate", serif;
             font-size: 1em;
+            line-height: 1.5rem;
         }
 
         .website_button {
@@ -107,20 +110,41 @@
             color: white;
         }
 
-        li {
-            float: left;
-            list-style-type: none;
-            padding-right: 3vw;
+        .tags {
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+
+        .tags li {
+            display: inline-block;
+            *display: inline; /*IE7*/
+            *zoom: 1; /*IE7*/
+            margin-right: 10px;
             font-family: "Orator", monospace;
             font-size: .75em;
             letter-spacing: .3em;
-            padding-bottom: 6vh;
             padding-top: 2vh;
+            color: black;
         }
     </style>
 </head>
 
 <body>
+<div class="masthead clearfix">
+    <div class="container inner">
+        <nav>
+            <ul class="nav masthead-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="creativetech.html">CREATIVE TECHNOLOGY</a></li>
+                <li><a href="animation.html">ANIMATION</a></li>
+                <li class="active"><a href="physical.html">PHYSICAL WORKS</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
 <div id="content" style="">
     <section id="grapes" class="post">
         <header style="color: #fff; background-color: black">
@@ -129,8 +153,8 @@
                     <h1>GRAPES EATING GRAPES EATING GRAPES</h1></div>
                 <div class="role">
                     <h2>
-                        Conception, Painting
-                    </h2> </div>
+                        Conception &amp; Painting
+                    </h2></div>
             </div>
         </header>
         <article>
@@ -139,7 +163,8 @@
                     <img src="images/physical/grapesEatingGrapes.jpg">
                 </div>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> This is a world of bread and circuses. Grapes lust after grapes, too caught up by the fruit to see the hands above orchestrating, holding the bunches just far enough a part. Behind them, another larger grape bunch comes to feed as well, and behind them probably lies an even larger bunch. We are all grapes on a vine, distracted by what we want, unable to see the danger behind us, or the danger above.
+                    </p>
                 </div>
                 <ul class="tags">
                     <li>OIL PAINTING</li>
@@ -156,7 +181,7 @@
                 <div class="role">
                     <h2>
                         Conception, Contextual Research &amp; Creation
-                    </h2> </div>
+                    </h2></div>
             </div>
         </header>
         <article>
@@ -174,7 +199,8 @@
                     <img src="images/physical/squareBraActionCollage.jpg">
                 </div>
                 <div class="details_info">
-                    <p> I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. I did this project which was really cool. </p>
+                    <p> Breasts come in all shapes and sizes, yet the normal breast shape is round and perky. Bras mold breasts into this shape and create a false standard. In the 50s, for example, the bullet bra was popular and a bullet shaped breast was the norm. To show the way bras mask true breast shape and create a standard, I imagined a world where the normal bra shape was a square. In that world, a square breast would be normal. I 3D printed the cups and sewed the straps, then I wore my bra for the day.
+                    </p>
                 </div>
                 <ul class="tags">
                     <li>3D PRINTING</li>
@@ -189,11 +215,11 @@
         <header style="color: #fff; background-color: black">
             <div class="PostHeader">
                 <div class="title">
-                    <h1>BAGELS FOR VALENTINE'S  DAY</h1></div>
+                    <h1>BAGELS FOR VALENTINE'S DAY</h1></div>
                 <div class="role">
                     <h2>
-                        Concept &amp; creation
-                    </h2> </div>
+                        Concept &amp; Creation
+                    </h2></div>
             </div>
         </header>
         <article>
@@ -202,15 +228,17 @@
                     <img src="images/physical/bagelsHeroTogether.jpg">
                 </div>
                 <div class="asset">
-                    <video playsinline autoplay muted loop id="bagels_process" class="browser_img" title="Bagels Process" preload="auto" data-setup="{}">
-                        <source src="images/physical/bagelsAction.mp4" type="video/mp4"> </video>
+                    <video playsinline autoplay muted loop id="bagels_process" class="browser_img"
+                           title="Bagels Process" preload="auto" data-setup="{}">
+                        <source src="images/physical/bagelsAction.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="asset">
                     <img src="images/physical/bagelsDoodle.jpg">
                 </div>
                 <div class="details_info">
-                    <p> The answer is: YES, i DID get the girl!! I wanted to express my infatuation without saying it outright, so I turned my daydream doodles
-                    into something we liked to get togeher most weekend mornings, bagels. I gave them to her in an unassuming brown paper bag. </p>
+                    <p>The answer is: YES, i did get the girl!! I wanted to express my infatuation without saying it outright, so I turned my daydream doodles into something we liked to get together most weekend mornings, bagels. I gave them to her in an unassuming brown paper bag.
+                    </p>
                 </div>
                 <ul class="tags">
                     <li>PROTOTYPING</li>

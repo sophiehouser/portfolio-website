@@ -82,22 +82,26 @@ class Face {
 
 }
 
-function preload() {
+function preload() {}
+
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+
+    refreshSprites(STARTING_FACE_COUNT, faces)
+
+    createPortfolioText();
 }
 
-function setup(faceCount = STARTING_FACE_COUNT) {
-    createCanvas(windowWidth, windowHeight);
-    console.log("setup");
-    console.log(faceCount);
 
-    var i;
-    for (i = 0; i < faceCount; i++) {
+function refreshSprites(faceCount, spriteList) {
+    var  i;
+    for (i=0; i < faceCount; i++) {
         xPos = random(width);
         yPos = random(height);
         xspeed = random(6);
         yspeed = random(6);
 
-        faces[i] = new Face('images/falafelFaceRight.png', xPos, yPos, xspeed, yspeed);
+        spriteList[i] = new Face('images/falafelFaceRight.png', xPos, yPos, xspeed, yspeed);
     }
 }
 
@@ -107,17 +111,35 @@ function draw() {
     console.log("draw faces: " + faceCount);
     animateCount = random(faceCount);
 
-    for (i = 0; i < animateCount; i++) {
+    for (i=0; i < animateCount; i++) {
         faces[i].move();
     }
 }
 
 function setFaceCount() {
     faceCount = document.getElementById('faceCount').value;
-    console.log('count in box: ');
 
-    if (faceCount == null) {
-        console.log('it null');
-    }
-    setup(faceCount);
+    let faceCountInt = parseInt(faceCount)
+
+    refreshSprites(faceCountInt, faces);
+}
+
+function centerPortfolioText() {
+    linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);
+}
+
+function centerPortfolioText() {
+    linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);
+}
+
+function createPortfolioText() {
+    linkContentVar = createDiv().id("linkContent")
+    linkContentVar.style("margin-left", -linkContentVar.offsetWidth + "px");
+
+    createA("", ' im sophie. im 23. i like to do this and do that. other text will go here. blh blah blah. my CV will be hyperlinked here. ').parent(linkContentVar);
+
+    linkContentVar.style("max-width", window.innerWidth - window.innerWidth/3 + "px");
+    centerPortfolioText();
+
+    //linkContentVar.position(window.innerWidth/2 - linkContentVar.elt.clientWidth/2, window.innerHeight/2 - linkContentVar.elt.clientHeight/2);
 }

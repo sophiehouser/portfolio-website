@@ -1,3 +1,5 @@
+@import url("nav.css");
+
 /*
  * Globals
  */
@@ -76,51 +78,51 @@ body {
     letter-spacing:  0.1em;
 }
 
-/*
- * Header
- */
-.masthead-brand {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+/*!**/
+/* * Header*/
+/* *!*/
+/*.masthead-brand {*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
 
-.masthead-nav > li {
-    display: inline-block;
-}
-.masthead-nav > li + li {
-    margin-left: 20px;
-}
-.masthead-nav > li > a {
-    padding-right: 0;
-    padding-left: 0;
-    font-size: 16px;
-    font-family: "Orator", monospace;
-    font-weight: bold;
-    color: #fff; /* IE8 proofing */
-    color: rgba(255,255,255,.75);
-    border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-    background-color: transparent;
-    color:white;
-    text-decoration: none;
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-    color: #fff;
-    border-bottom-color: #fff;
-}
+/*.masthead-nav > li {*/
+/*    display: inline-block;*/
+/*}*/
+/*.masthead-nav > li + li {*/
+/*    margin-left: 20px;*/
+/*}*/
+/*.masthead-nav > li > a {*/
+/*    padding-right: 0;*/
+/*    padding-left: 0;*/
+/*    font-size: 16px;*/
+/*    font-family: "Orator", monospace;*/
+/*    font-weight: bold;*/
+/*    color: #fff; !* IE8 proofing *!*/
+/*    color: rgba(255,255,255,.75);*/
+/*    border-bottom: 2px solid transparent;*/
+/*}*/
+/*.masthead-nav > li > a:hover,*/
+/*.masthead-nav > li > a:focus {*/
+/*    background-color: transparent;*/
+/*    color:white;*/
+/*    text-decoration: none;*/
+/*}*/
+/*.masthead-nav > .active > a,*/
+/*.masthead-nav > .active > a:hover,*/
+/*.masthead-nav > .active > a:focus {*/
+/*    color: #fff;*/
+/*    border-bottom-color: #fff;*/
+/*}*/
 
-@media (min-width: 768px) {
-    .masthead-brand {
-        float: left;
-    }
-    .masthead-nav {
-        float: right;
-    }
-}
+/*@media (min-width: 768px) {*/
+/*    .masthead-brand {*/
+/*        float: left;*/
+/*    }*/
+/*    .masthead-nav {*/
+/*        float: right;*/
+/*    }*/
+/*}*/
 
 
 /*
@@ -140,11 +142,6 @@ body {
  */
 
 @media (min-width: 768px) {
-    /* Pull out the header and footer */
-    .masthead {
-        position: fixed;
-        top: 0;
-    }
     /* Start the vertical centering */
     .site-wrapper-inner {
         vertical-align: middle;
