@@ -24,6 +24,7 @@ section, aside, div {
 
 h1 {
     font-size: 4rem;
+    animation-duration: 1.7s;
 }
 
 h2 {
@@ -63,6 +64,7 @@ h1, h2, h3 {
     }
 }
 
+
 @media (min-width: 765px) {
     /* tablet, landscape iPad, lo-res laptops ands desktops */
     .flex-container {
@@ -96,6 +98,8 @@ h1, h2, h3 {
     font-family: "Mate", serif;
     font-size: 1rem;
     letter-spacing: 0.1em;
+    animation-delay: .4s;
+    animation-duration: 1.5s;
 }
 
 .sidebar {
@@ -147,6 +151,8 @@ h1, h2, h3 {
     height: 20px;
     text-align: center;
     margin-bottom: 10vh;
+    animation-delay: .8s;
+    animation-duration: 1.5s;
 }
 
 .tags li {

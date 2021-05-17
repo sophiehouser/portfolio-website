@@ -26,11 +26,6 @@
 }
 
 @font-face {
-    font-family: 'Orator';
-    src: url('fonts/Hoefler.ttf') format("opentype");
-}
-
-@font-face {
     font-family: 'Mate';
     src: url('fonts/Mate-Regular.ttf') format("opentype");
 }
