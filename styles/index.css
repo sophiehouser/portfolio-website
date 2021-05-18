@@ -31,10 +31,11 @@ body {
     height: 100%;
     background-color: #fff;
 }
+
 body {
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -55,7 +56,9 @@ body {
     display: table-cell;
     vertical-align: middle;
 
-    background-image: url('../images/birds.gif'); background-repeat: no-repeat; background-position: center center;
+    background-image: url('../images/birds.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -72,19 +75,20 @@ body {
     padding: 30px;
 }
 
- h1.cover-heading {
+h1.cover-heading {
     color: white;
     font-family: "Orator", monospace;
-     font-size: 1.7rem;
-    letter-spacing:  0.1em;
-     animation-duration: 1.5s;
-     padding: 0 5%;
+    font-size: 1.7rem;
+    letter-spacing: 0.1em;
+    animation-duration: 1.5s;
+    padding: 0 5%;
 
- }
+}
 
 .cover {
     padding: 0 20px;
 }
+
 .cover .btn-lg {
     padding: 10px 20px;
     font-weight: bold;
@@ -110,6 +114,7 @@ body {
     h1.cover-heading {
         font-size: xxx-large;
     }
+
     .masthead-nav > li > a {
         font-size: large;
     }

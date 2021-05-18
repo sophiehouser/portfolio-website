@@ -1,41 +1,17 @@
 @font-face {
-    font-family: 'Impact';
-    src: url('fonts/Impact.ttf') format("opentype");
-
-    text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
-}
-
-@font-face {
-    font-family: 'Portico';
-    src: url('fonts/Portico.otf') format("opentype");
-
-    text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
-}
-
-@font-face {
     font-family: 'Orator';
-    src: url('fonts/Orator.ttf') format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Read next point */
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
+    src: local('Orator'), url('/fonts/orator-webfont.woff2') format('woff2'), url('/fonts/orator-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Mate';
-    src: url('fonts/Mate-Regular.ttf') format("opentype");
-}
-
-@font-face {
-    font-family: 'Oranienbaum';
-    src: url('fonts/Oranienbaum.ttf') format("opentype");
-}
-
-@font-face {
-    font-family: "GT_Sectra";
-    src: url(//db.onlinewebfonts.com/c/8d026c963e4feb5053ef8b0cf5ca1910?family=Gt);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap; /* Read next point */
+    unicode-range: U+000-5FF; /* Download only latin glyphs */
+    src: local('Mate'), url('/fonts/mate-regular-webfont.woff2') format('woff2'), url('/fonts/mate-regular-webfont.woff') format('woff');
 }

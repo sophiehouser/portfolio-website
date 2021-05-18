@@ -120,6 +120,12 @@ h1, h2, h3 {
     text-align: center;
 }
 
+img.asset {
+    width: 30px;
+    text-align: center;
+}
+
+
 .asset_caption {
 
 }
