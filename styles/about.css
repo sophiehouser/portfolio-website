@@ -1,0 +1,174 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    left: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+section, aside, div {
+    padding: 20px;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 4rem;
+    animation-duration: 1.7s;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h1, h2, h3 {
+    margin-top: 0px;
+}
+
+
+@media (min-width: 320px) {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+}
+
+@media (max-width: 480px) {
+    /* smartphones, Android phones, landscape iPhone */
+    .about-content {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+}
+
+@media (max-width: 770px) {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .flex-container {
+        display: flex;
+    }
+
+    .about-content {
+        padding-top: 0;
+        margin-top: -15vh;
+    }
+}
+
+
+@media (min-width: 765px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .flex-container {
+        display: flex;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* big landscape tablets, laptops, and desktops */
+
+}
+
+@media (min-width: 1281px) {
+    /* hi-res laptops and desktops */
+}
+
+.main-content {
+    flex: 1;
+    text-align: left;
+}
+
+.main-content h2 {
+    color: white;
+    font-family: "Orator", monospace;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.main-content p {
+    color: white;
+    font-family: "Mate", serif;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    animation-delay: .4s;
+    animation-duration: 1.5s;
+}
+
+.sidebar {
+    flex: 0 0 300px;
+    text-align: center;
+    padding: 0;
+}
+
+.about-content {
+    padding-top: 15vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.asset video {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+img.asset {
+    width: 30px;
+    text-align: center;
+}
+
+
+.asset_caption {
+
+}
+
+.sidebar p {
+    color: white;
+    font-family: "Orator", monospace;
+    font-size: .5rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.sidebar a,
+.tags a {
+    color: palegreen;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.sidebar a:hover,
+.tags a:hover {
+    text-decoration: none;
+    color: pink;
+}
+
+.tags {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    margin-bottom: 10vh;
+    animation-delay: .8s;
+    animation-duration: 1.5s;
+}
+
+.tags li {
+    display: inline-block;
+    *display: inline; /*IE7*/
+    *zoom: 1; /*IE7*/
+    margin-right: 10px;
+    font-family: "Orator", monospace;
+    font-size: .75em;
+    letter-spacing: .3em;
+    padding-top: 2vh;
+    color: white;
+}

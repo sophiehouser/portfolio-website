@@ -31,10 +31,11 @@ body {
     height: 100%;
     background-color: #fff;
 }
+
 body {
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -55,7 +56,9 @@ body {
     display: table-cell;
     vertical-align: middle;
 
-    background-image: url('../images/birds.gif'); background-repeat: no-repeat; background-position: center center;
+    background-image: url('../images/birds.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -72,69 +75,28 @@ body {
     padding: 30px;
 }
 
- h1.cover-heading {
+h1.cover-heading {
     color: white;
-    font-family: "Orator",serif;
-    letter-spacing:  0.1em;
+    font-family: "Orator", monospace;
+    font-size: 1.7rem;
+    letter-spacing: 0.1em;
+    animation-duration: 1.5s;
+    padding: 0 5%;
+
 }
-
-/*!**/
-/* * Header*/
-/* *!*/
-/*.masthead-brand {*/
-/*    margin-top: 10px;*/
-/*    margin-bottom: 10px;*/
-/*}*/
-
-/*.masthead-nav > li {*/
-/*    display: inline-block;*/
-/*}*/
-/*.masthead-nav > li + li {*/
-/*    margin-left: 20px;*/
-/*}*/
-/*.masthead-nav > li > a {*/
-/*    padding-right: 0;*/
-/*    padding-left: 0;*/
-/*    font-size: 16px;*/
-/*    font-family: "Orator", monospace;*/
-/*    font-weight: bold;*/
-/*    color: #fff; !* IE8 proofing *!*/
-/*    color: rgba(255,255,255,.75);*/
-/*    border-bottom: 2px solid transparent;*/
-/*}*/
-/*.masthead-nav > li > a:hover,*/
-/*.masthead-nav > li > a:focus {*/
-/*    background-color: transparent;*/
-/*    color:white;*/
-/*    text-decoration: none;*/
-/*}*/
-/*.masthead-nav > .active > a,*/
-/*.masthead-nav > .active > a:hover,*/
-/*.masthead-nav > .active > a:focus {*/
-/*    color: #fff;*/
-/*    border-bottom-color: #fff;*/
-/*}*/
-
-/*@media (min-width: 768px) {*/
-/*    .masthead-brand {*/
-/*        float: left;*/
-/*    }*/
-/*    .masthead-nav {*/
-/*        float: right;*/
-/*    }*/
-/*}*/
-
-
-/*
- * Cover
- */
 
 .cover {
     padding: 0 20px;
 }
+
 .cover .btn-lg {
     padding: 10px 20px;
     font-weight: bold;
+}
+
+.cover-heading img {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*
@@ -146,5 +108,14 @@ body {
     .site-wrapper-inner {
         vertical-align: middle;
     }
+}
 
+@media only screen and (max-device-width: 480px) {
+    h1.cover-heading {
+        font-size: xxx-large;
+    }
+
+    .masthead-nav > li > a {
+        font-size: large;
+    }
 }
