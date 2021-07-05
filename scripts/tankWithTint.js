@@ -1,8 +1,4 @@
 // Ahhhhhhhh My Face Is Bouncing
-// Daniel Shiffman
-// https://thecodingtrain.com/CodingChallenges/131-bouncing-dvd-logo.html
-// https://youtu.be/0j86zuqqTlQ
-// https://editor.p5js.org/codingtrain/sketches/Ya1K1ngtFk
 
 let xPos;
 let yPos;
@@ -10,14 +6,42 @@ let yPos;
 let xspeed;
 let yspeed;
 
-let dvd;
-
 let faces = [];
 
 const STARTING_FACE_COUNT = 20;
 let faceCount = STARTING_FACE_COUNT;
 
 let r, g, b;
+
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+
+    for (var i = 0; i < faceCount; i++) {
+        xPos = random(width);
+        yPos = random(height);
+        xspeed = random(6);
+        yspeed = random(6);
+
+        faces[i] = new Face('images/falafelFaceRight.png', xPos, yPos, xspeed, yspeed);
+    }
+}
+
+function draw() {
+    background(0);
+
+    // create blinking effect
+    animateCount = random(faceCount);
+
+    for (var i = 0; i < animateCount; i++) {
+        faces[i].move();
+    }
+}
+
+function setFaceCount() {
+    faceCount = document.getElementById('faceCount').value;
+
+    setup(faceCount);
+}
 
 class Face {
     constructor(currImageSource, xPos, yPos, xSpeed, ySpeed) {
@@ -48,6 +72,7 @@ class Face {
         this.xPos = this.xPos + this.xSpeed;
         this.yPos = this.yPos + this.ySpeed;
 
+        // reverse face if at the edge of the screen
         if (this.xPos + this.image.width >= width) {
             this.xSpeed = -this.xSpeed;
             this.xPos = width - this.image.width;
@@ -78,46 +103,4 @@ class Face {
 
         tint(r, g, b);
     }
-
-
-}
-
-function preload() {
-}
-
-function setup(faceCount = STARTING_FACE_COUNT) {
-    createCanvas(windowWidth, windowHeight);
-    console.log("setup");
-    console.log(faceCount);
-
-    var i;
-    for (i = 0; i < faceCount; i++) {
-        xPos = random(width);
-        yPos = random(height);
-        xspeed = random(6);
-        yspeed = random(6);
-
-        faces[i] = new Face('images/falafelFaceRight.png', xPos, yPos, xspeed, yspeed);
-    }
-}
-
-function draw() {
-    background(0);
-    var i;
-    console.log("draw faces: " + faceCount);
-    animateCount = random(faceCount);
-
-    for (i = 0; i < animateCount; i++) {
-        faces[i].move();
-    }
-}
-
-function setFaceCount() {
-    faceCount = document.getElementById('faceCount').value;
-    console.log('count in box: ');
-
-    if (faceCount == null) {
-        console.log('it null');
-    }
-    setup(faceCount);
 }
